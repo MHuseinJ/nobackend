@@ -1,0 +1,119 @@
+.button-main {
+	background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    left: 150px;
+    top: 80px;
+    font-weight: lighter;
+    padding: 8px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+html,body { 
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px;
+    font-family: museo; 
+}
+
+
+#page1 { 
+	background: url('/test/assets/img/BG1.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	height: 100%; 
+}
+#page2 { 
+	background-color: red; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	height: 100%; 
+}
+
+#page3 { 
+	background: url('/test/assets/img/background1.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	height: 100%; 
+}
+
+#page4 { 
+	background: url('/test/assets/img/background2.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	height: 100%; 
+}
+
+.pageone { 
+    background-color: rgba(115, 100, 87, 0.0);
+    height: 100%;
+}
+
+.page2{
+	height: 50%;
+	background-color: red;
+}
+.main-nav {
+	height: 25%;
+}
+.main-section{
+	height:75%;
+}
+
+#main-text h5{
+	font-weight: lighter;
+}
+
+#main-text {
+	padding-right: 30%;
+	margin-left: 20%;
+}
+
+.product {
+    padding-top: 5%;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.subtitle-product {
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.footer-landing-page {
+	margin-top: 0px !important;
+	background-color: #dc382c !important;
+}
+
+.footer-body{
+	margin-bottom: 0px;
+}
+
+.demo#section-slides .panel, .demo#section-wipes .panel {
+	background-image: url("../img/example_bg_spacer_v.gif");
+}
+.demo#section-wipes #pinContainer .turqoise, .demo#section-wipes #pinContainer .green, .demo#section-slides #slideContainer .panel {
+	background-image: url("../img/example_bg_spacer_h.gif");
+}
+.demo#section-slides .panel > b, .demo#section-wipes .panel > b {
+	font-size: 15px;
+	color: white;
+	position: relative;
+	display: block;
+	height: 0;
+	overflow: visible;
+	top: 50%;
+}
