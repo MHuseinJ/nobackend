@@ -1,0 +1,143 @@
+.button-main {
+	background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    left: 150px;
+    top: 80px;
+    font-weight: lighter;
+    padding: 8px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+html,body { 
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px;
+    font-family: museo; 
+}
+
+ /* Style for our header texts
+  * --------------------------------------- */
+  h1{
+    font-size: 5em;
+    font-family: arial,helvetica;
+    color: #fff;
+    margin:0;
+    padding:0;
+  }
+
+  /* Backgrounds will cover all the section
+  * --------------------------------------- */
+  #section0,
+  #section1,
+  #section2,
+  #section3{
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* Defining each sectino background and styles
+  * --------------------------------------- */
+  #section0{
+    background-image: url(/test/assets/img/BG1.jpg);
+  }
+  #section1{
+    background-color: red;
+  }
+  #section2{
+    background-image: url(/test/assets/img/background1.jpg);
+  }
+  #section3{
+    background-image: url(/test/assets/img/background2.jpg);
+  }
+
+  /*Adding background for the slides
+  * --------------------------------------- */
+  #slide1{
+    background-image: url(/test/assets/img/background3.jpg);
+    padding: 6% 0 0 0;
+  }
+  #slide2{
+    background-color: grey;
+    padding: 6% 0 0 0;
+  }
+
+
+  /* Bottom menu
+  * --------------------------------------- */
+  #infoMenu li a {
+    color: #fff;
+  }
+
+      #navigation-pane {
+      background-color: transparent;
+      height: 20%;
+      margin-bottom: 0;
+    }
+    #page1-body {
+      height: 80%;
+    }
+    #page1-animation {
+      background-color: transparent;
+      height: 100%;
+    }
+    #page1-content {
+      height: 100%;
+    }
+    #animation-container{
+      height: 80%;
+      background-color: transparent;
+    }
+    #picture1{
+      height: 100%;
+      width: 100%;
+    }
+    #page1-content-title {
+      margin-top: 10%;
+      height: 80%;
+    }
+    .logo {
+      height: 100%;
+    }
+    #page1-logo {
+      background-color: transparent;
+      height: 100%;
+      padding: 0px;
+    }
+    #page1-atas {
+      background-color: transparent;
+      height: 50%;
+    }
+    #page1-bawah {
+      background-color: transparent;
+      height: 50%;
+    }
+    #page1-menu {
+      height: 100%;
+    }
+    .link-menu{
+      color: white;
+      margin: 10px;
+    }
+    .content-page1 {
+      color: white; 
+      line-height: 1rem;
+    }
+    .title-page1{
+      color: white;
+    }
+    .product {
+    padding-top: 5%;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.subtitle-product {
+    color: white;
+    font-weight: bold;
+    font-size: 38px;
+}
