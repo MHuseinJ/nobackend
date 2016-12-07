@@ -33,7 +33,11 @@ html,body {
   #section0,
   #section1,
   #section2,
-  #section3{
+  #section3,
+  #section4,
+  #section5,
+  #section6,
+  #section7{
     background-size: cover;
     background-attachment: fixed;
   }
@@ -41,18 +45,41 @@ html,body {
   /* Defining each sectino background and styles
   * --------------------------------------- */
   #section0{
-    background-image: url(/test/assets/img/BG1.jpg);
+    background-image: url(../img/Page1.jpg);
   }
   #section1{
-    background-color: red;
+    background-color: white;
   }
   #section2{
-    background-image: url(/test/assets/img/background1.jpg);
+    background-image: grey;
   }
   #section3{
-    background-image: url(/test/assets/img/background2.jpg);
+    background-image: url(../img/Page4.png);
   }
-
+  #section4{
+    background-image: url(../img/Page5.png);
+  }
+  #section5{
+    background-image: url(../img/Page6.png);
+  }
+  #section6{
+    background-image: url(../img/Page7.png);
+  }
+  #section7{
+    background-image: url(../img/Page8.png);
+  }
+  #section8{
+    background-color: white;
+    color: black !important;
+  }
+  #section9{
+    background-color: white;
+    color: black !important;
+  }
+  #section10{
+    background-color: #dc382c !important;
+    color: black !important;
+  }
   /*Adding background for the slides
   * --------------------------------------- */
   #slide1{
@@ -87,7 +114,7 @@ html,body {
       height: 100%;
     }
     #animation-container{
-      height: 80%;
+      height: 100%;
       background-color: transparent;
     }
     #picture1{
@@ -124,20 +151,111 @@ html,body {
     .content-page1 {
       color: white; 
       line-height: 1rem;
+      margin-top: 10%
+    }
+    #container-button-page-1{
+      margin-top: 10%
     }
     .title-page1{
       color: white;
+      font-size: 30px;
     }
     .product {
     padding-top: 5%;
     margin: 0px;
-    color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 48px;
+    }
+
+.subtitle-product {
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+}
+.footer-body{
+  margin-bottom: 0px;
+}
+.footer-landing-page {
+  margin-top: 0px !important;
+  background-color: #dc382c !important;
+}
+
+.Title-Lower-Page {
+    padding-top: 5%;
+    margin: 0px;
+    color: black;
     font-weight: bold;
     font-size: 48px;
 }
 
-.subtitle-product {
-    color: white;
+.button-main-2 {
+  background: none;
+    border: 2px solid #dc382c;
+    border-radius: 5px;
+    color: #dc382c;
+    left: 150px;
+    top: 80px;
+    font-weight: lighter;
+    padding: 8px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+ #picture-page4{
+      height: 100%;
+      /*width: 100%;*/
+    }
+
+#page-feature-content{
+    height: 100%;
+    background-color: blue;
+}
+#page-feature-picture{
+    height: 100%;
+    background-color: red;
+}
+
+#page-fetaure-body{
+  height: 100%
+}
+
+.Title-Lower-Page-2 {
+    padding-top: 2%;
+    margin: 0px;
+    color: black;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 48px;
+}
+
+a.button-main-feature {
+    color: #dc382c;
+    left: 150px;
+    top: 80px;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 20px
+}
+
+.title-feature{
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.content-feature{
+  color: white; 
+  line-height: 1rem;
+  margin-top: 20%;
+  font-size: 17px;
+}
+
+.button-main-3 {
+    color: white;
+    left: 150px;
+    top: 80px;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 20px;
+    background-color: #dc382c;
 }
