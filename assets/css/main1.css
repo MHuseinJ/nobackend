@@ -37,7 +37,8 @@ html,body {
   #section4,
   #section5,
   #section6,
-  #section7{
+  #section7,
+  #loginsection{
     background-size: cover;
     background-attachment: fixed;
   }
@@ -80,6 +81,9 @@ html,body {
     background-color: #dc382c !important;
     color: black !important;
   }
+  #loginsection{
+    background-image: url(../img/login-background.png);
+  }
   /*Adding background for the slides
   * --------------------------------------- */
   #slide1{
@@ -91,6 +95,9 @@ html,body {
     padding: 6% 0 0 0;
   }
 
+  .login-form{
+    border: 1px solid white !important;
+  }
 
   /* Bottom menu
   * --------------------------------------- */
@@ -258,4 +265,16 @@ a.button-main-feature {
     padding: 8px;
     font-size: 20px;
     background-color: #dc382c;
+}
+
+.button-login {
+  background: none;
+    border: 1px solid white;
+    color: white;
+    left: 150px;
+    top: 80px;
+    font-weight: lighter;
+    padding: 7px 17px 7px 17px;
+    line-height: 20px;
+    margin: 10px;
 }
