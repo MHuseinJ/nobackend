@@ -1,186 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>NoBackEnd</title>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <style>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>fullPage.js A simple Demo</title>
+  <meta name="author" content="Alvaro Trigo Lopez" />
+  <meta name="description" content="fullPage very simple demo." />
+  <meta name="keywords"  content="fullpage,jquery,demo,simple" />
+  <meta name="Resource-type" content="Document" />
+
+
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="examples.css" /> -->
+
+  <link href="assets/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
       @font-face {
         font-family: museo;
           src: url(MuseoSans-100.otf);
         }
     </style>
-  </head>
-  <style type="text/css">
-    #navigation-pane {
-      background-color: transparent;
-      height: 20%;
-      margin-bottom: 0;
-    }
-    #page1-body {
-      height: 80%;
-    }
-    #page1-animation {
-      background-color: transparent;
-      height: 100%;
-    }
-    #page1-content {
-      height: 100%;
-    }
-    #animation-container{
-      height: 80%;
-      background-color: transparent;
-    }
-    #picture1{
-      height: 100%;
-      width: 100%;
-    }
-    #page1-content-title {
-      margin-top: 10%;
-      height: 80%;
-    }
-    .logo {
-      height: inherit;
-      height: 100%;
-    }
-    #page1-logo {
-      background-color: transparent;
-      height: 100%;
-    }
-    #page1-atas {
-      background-color: transparent;
-      height: 50%;
-    }
-    #page1-bawah {
-      background-color: transparent;
-      height: 50%;
-    }
-    #page1-menu {
-      height: 100%;
-    }
-    .link-menu{
-      color: white;
-      margin: 10px;
-    }
-    .content-page1 {
-      color: white; 
-      line-height: 1rem;
-    }
-    .title-page1{
-      color: white;
-    }
-  </style>
-  <body>
-    <div id="page1">
-      <div id="navigation-pane" class="row">
-        <div class="col s6" id="page1-logo">
-          <a href="#!" class="left logo"><img class="logo" src="assets/img/LogoNobackend.png"></a>
-        </div>
-        <div class="col s6" id="page1-atas">
-            <button class="button-main right">LOG IN</button>
-        </div>
-        <div class="col s6" id="page1-bawah">
-            <a href="#!" class="link-menu right">ABOUT US</a>
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <div id="navigation-pane" class="row">
+            <div class="col s6" id="page1-logo">
+                <a href="#!" class="left logo"><img class="logo" src="assets/img/LogoNobackend.png"></a>
+            </div>
+            <div class="col s6" id="page1-atas">
+                <a href="login.html" class="button-main right">LOG IN</a>
+                <a href="register.html" class="button-main right">REGISTER</a>
+            </div>
+            <div class="col s6" id="page1-bawah">
+                <a href="#!" class="link-menu right">ABOUT US</a>
                 <a href="#!" class="link-menu right">SUPPORT & LEARNING</a>
                 <a href="#!" class="link-menu right">CUSTOMERS</a>
                 <a href="#!" class="link-menu right">PRICING</a>
+            </div>
         </div>
-
-      </div>
-      <div id="page1-body" class="row">
-        <div id="page1-animation" class="col s6">
-          <div class="col s10 offset-s1" id="animation-container">
-            <img id="picture1" src="assets/img/img1/smartphone_00030.png">
-          </div>
-        </div>
-          <div id ="page1-content" class="col s6">
-            <div class="col s7 offset-s1" id="page1-content-title">
-              <h5 class="valign title-page1">Backend service that you mobile apps faster and easier. No more time for backend development</h5>
-
-                <p class="light valign content-page1">Mobile backend as service, give developer a flexible way to develop better apps using powerfull cloud based backend integration</p>
-                <div class="center">
-                  <button class="button-main valign">START BUILDING NOW</button>
+        <div id="page1-body" class="row">
+            <div id="page1-animation" class="col s6">
+                <div class="col s10 offset-s1" id="animation-container">
+                    <img id="picture1" src="assets/img/img1/smartphone_0001.png">
                 </div>
             </div>
-          </div>
-      </div>
+            <div id ="page1-content" class="col s6">
+                <div class="col s7 offset-s2" id="page1-content-title">
+                    <h5 class="valign title-page1">Backend service that you mobile apps faster and easier. No more time for backend development</h5>
+                    <p class="light valign content-page1">Mobile backend as service, give developer a flexible way to develop better apps using powerfull cloud based backend integration</p>
+                    <div class="center" id="container-button-page-1">
+                        <button class="button-main valign">START BUILDING NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="page2">
+    <div class="section" id="section1">
         <div class="container">
             <h5 class="center product"> OUR PRODUCT </h5>
-            <p class="center subtitle-product"> Nobackend is a mobile backend as a Service platform for developer to build backend apps</p>
+      <p class="center subtitle-product"> Nobackend is a mobile backend as a Service platform for developer to build backend apps</p>
+      <img src="assets/img/page-2.png">
+    </div>
+  </div>
+  <div class="section" id="section2">
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li>
+          <img src="assets/img/slide/Artboard1.png"> <!-- random image -->
+          <div class="caption center-align">
+
+          </div>
+        </li>
+        <li>
+          <img src="assets/img/slide/Artboard2.png"> <!-- random image -->
+          <div style="margin-top: 10%" class="caption left-align">
+          </div>
+        </li>
+        <li>
+          <img src="assets/img/slide/Artboard3.png"> <!-- random image -->
+          <div class="caption right-align">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="section" id="sectionfeature">
+        <div id="navigation-pane" class="row center">
+            <h3 class="center orange-soft-text"><b>FEATURES SET</b></h3>
+        </div>
+        <div id="page1-body" class="row">
+            <div class="row">
+                <a href="cloud.html" class="col offset-s2 s2 center">
+                    <img src="assets/img/feature-icon/cloud.png" class="responsive-image">
+                    <p class="orange-soft-text">Cloud Storage</p>
+                </a>
+                <a href="usermanagement.html" class="col offset-s1 s2 center">
+                    <img src="assets/img/feature-icon/usermng.png" class="responsive-image">
+                    <p class="orange-soft-text">User Management</p>
+                </a>
+                <a href="pushnotif.html" class="col offset-s1 s2 center">
+                    <img src="assets/img/feature-icon/pushnotif.png" class="responsive-image">
+                    <p class="orange-soft-text">Push Notification</p>
+                </a>
+            </div>
+            <div class="row">
+                 <a href="geoloc.html" class="col offset-s3 s2 center">
+                    <img src="assets/img/feature-icon/geoloc.png" class="responsive-image">
+                    <p class="orange-soft-text">Geolocation</p>
+                </a>
+                <a href="socialnet.html" class="col offset-s2 s2 center">
+                    <img src="assets/img/feature-icon/socialnet.png" class="responsive-image">
+                    <p class="orange-soft-text">Social Grid</p>
+                </a>
+            </div>
         </div>
     </div>
-    <div id="page3">
-      <div class="carousel carousel-slider center" data-indicators="true">
-        <div class="carousel-fixed-item center">
-          <a class="btn waves-effect white grey-text darken-text-2">button</a>
-        </div>
-        <div class="carousel-item red white-text" href="#one!">
-          <h2>First Panel</h2>
-          <p class="white-text">This is your first panel</p>
-        </div>
-        <div class="carousel-item amber white-text" href="#two!">
-          <h2>Second Panel</h2>
-          <p class="white-text">This is your second panel</p>
-        </div>
-        <div class="carousel-item green white-text" href="#three!">
-          <h2>Third Panel</h2>
-          <p class="white-text">This is your third panel</p>
-        </div>
-        <div class="carousel-item blue white-text" href="#four!">
-          <h2>Fourth Panel</h2>
-          <p class="white-text">This is your fourth panel</p>
-        </div>
-      </div>
+    <div class="section" id="section8">
+        <h5 class="center Title-Lower-Page-2"> OUR LATEST WORK </h5>
     </div>
-    <div id="page4">
+    <div class="section" id="section9">
+        <div style="height: inherit" class="row">
+        <div style="height:60%" class="row">
+            <h5 class="center Title-Lower-Page-2"> RECENT INFORMATION </h5>
+            <div class="row">
+                <div class="col s4">
+                    <div style = " padding: 10%; margin: 10%" class="card-panel white">
+                        <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                        </span>
+                        <div class="center" id="container-button-page-1">
+                            <button class="button-main-3 valign">READ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div style = " padding: 10%; margin: 10%" class="card-panel white">
+                        <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                        </span>
+                        <div class="center" id="container-button-page-1">
+                            <button class="button-main-3 valign">READ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div style = " padding: 10%; margin: 10%" class="card-panel white">
+                        <span class="black-text">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                        </span>
+                        <div class="center" id="container-button-page-1">
+                            <button class="button-main-3 valign">READ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height:30%" class="row">
+            <div class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel-fixed-item center">
+                  <a class="btn waves-effect white grey-text darken-text-2">button</a>
+                </div>
+                <div class="carousel-item red white-text" href="#one!">
+                  <h2>First Panel</h2>
+                  <p class="white-text">This is your first panel</p>
+                </div>
+                <div class="carousel-item amber white-text" href="#two!">
+                  <h2>Second Panel</h2>
+                  <p class="white-text">This is your second panel</p>
+                </div>
+                <div class="carousel-item green white-text" href="#three!">
+                  <h2>Third Panel</h2>
+                  <p class="white-text">This is your third panel</p>
+                </div>
+                <div class="carousel-item blue white-text" href="#four!">
+                  <h2>Fourth Panel</h2>
+                  <p class="white-text">This is your fourth panel</p>
+                </div>
+              </div>
+        </div>
+        </div>
     </div>
-    
-
-    <footer class="footer-landing-page page-footer">
-    <div class="container">
-      <div class="row footer-body">
-       <div class="col l2 s12">
-          <h5 class="white-text">PRODUCT</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Platform</a></li>
-            <li><a class="white-text" href="#!">Pricing</a></li>
-          </ul>
+    <div class="section" id="section10">
+        <div style="height: 50% ;background-color: #fff !important;" class="center">
+            <h5 class="center Title-Lower-Page"> SEE FOR YOUR APPS. GET STARTED. </h5>
+            <button class="button-main-2 center">START BUILDING NOW</button>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">RECOGNITION</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Customers</a></li>
-            <li><a class="white-text" href="#!">Succes Stories</a></li>
-            <li><a class="white-text" href="#!">Testimonial</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">RECENT POST</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Berita yang telah di update di blog</a></li>
-            <li><a class="white-text" href="#!">Berita yang telah di update di blog</a></li>
-          </ul>
-        </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">FIND US</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-      </div>
+        <footer class="footer-landing-page page-footer">
+            <div class="container">
+                <div class="row footer-body">
+                    <div class="col l2 s12">
+                        <h5 class="white-text">PRODUCT</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Platform</a></li>
+                            <li><a class="white-text" href="#!">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">RECOGNITION</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Customers</a></li>
+                            <li><a class="white-text" href="#!">Succes Stories</a></li>
+                            <li><a class="white-text" href="#!">Testimonial</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">RECENT POST</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Berita yang telah di update di blog</a></li>
+                            <li><a class="white-text" href="#!">Berita yang telah di update di blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l4 s12">
+                        <h5 class="white-text">FIND US</h5>
+                        <p class="grey-text text-lighten-4">PT. Telekomunikasi Indonesia<br> Divisi Digital Service (DDS) <br> Jalan Gegerkalong Hilir No. 47 <br>Bandung, Indonesia <br> <br> Nomor Telepon <br> <br> Email <br> <br> <img src="assets/img/icon/instagram.png">  <img src="assets/img/icon/facebook.png">  <img src="assets/img/icon/Asset 10.png">  <img src="assets/img/icon/pinterest.png">  <img src="assets/img/icon/youtube.png"> </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-  </footer>
-  <script type="text/javascript" src="/test/assets/js/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="/test/assets/js/materialize.min.js"></script>
-  <script type="text/javascript" src="/test/assets/js/main.js"></script>
-  <script type="text/javascript" src="/test/assets/js/animationpicture.js"></script>
-  </body>
+</div>
 
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
 </html>
